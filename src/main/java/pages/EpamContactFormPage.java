@@ -26,11 +26,11 @@ public class EpamContactFormPage {
         inputDescription.val(descr);
     }
 
-    public void pressDropDownButton(){
+    private void pressDropDownButton(){
         dropDownButton.click();
     }
 
-    public void chooseWeather(String weather){
+    private void chooseWeather(String weather){
         this.weather.click();
     }
 
@@ -38,19 +38,4 @@ public class EpamContactFormPage {
         submitButton.click();
     }
 
-    public boolean checkResults(){
-        return true;
-    }
-/*    public boolean checkResults(String lastName, String weather, String descr){
-        SelenideElement lastNameResult = resultArea.get(1);
-        SelenideElement descrResult = resultArea.get(2);
-        SelenideElement weatherResult = resultArea.get(3);
-        return getParsedText(lastNameResult).equals(lastName) &
-               getParsedText(descrResult).equals(descr) &
-               getParsedText(weatherResult).equals(weather);
-    }
-
-    private String getParsedText(SelenideElement element){
-        return element.text().split(":")[1].trim();
-    }*/
 }

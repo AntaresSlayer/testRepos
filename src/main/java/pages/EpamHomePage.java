@@ -31,12 +31,10 @@ public class EpamHomePage {
     }
 
     public void pressLoginSubmitButton(){
-        //loginSubmitButton.shouldBe(visible);
         loginSubmitButton.click();
     }
 
     public void pressContactFormButton(){
-        //contactFormButton.shouldBe(visible);
         contactFormButton.click();
     }
 
