@@ -1,6 +1,6 @@
-Feature:
+Feature: as a user i want to choose some date
 
-  Scenario:
+  Scenario: user goes to dates page and selects required date
     Given user is on a home page
     When he presses on login button
     And he inputs his credentials and logs in
