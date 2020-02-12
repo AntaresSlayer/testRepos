@@ -12,8 +12,9 @@ public class Hook {
     @Before
     public void setUp(){
         Configuration.startMaximized = true;
-        Configuration.timeout = 5000;
         Selenide.open("http://epam.github.io/JDI/index.html");
+        Configuration.timeout = 5000;
+
     }
 
 
